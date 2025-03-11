@@ -143,7 +143,8 @@ function showMerchantsView() {
   addRemoveActiveNav(merchantsNavButton, itemsNavButton)
   addNewButton.dataset.state = 'merchant'
   show([merchantsView, addNewButton])
-  hide([itemsView])
+  hide([itemsView, couponsView])
+  couponsView.innerHTML = ''
   displayMerchants(merchants)
 }
 
