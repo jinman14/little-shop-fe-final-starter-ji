@@ -150,16 +150,26 @@ h3 {
   transform: translateY(-5px);
 }
 
-.items-view {
+.items-view, #coupons-view {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .item {
   flex-direction: column;
   text-align: center;
   width: 30%;
+}
+
+.coupon {
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+}
+
+.coupon h2 {
+  color: orange
 }
 
 .item p,

@@ -1,47 +1,24 @@
 # Little Shop - Coupon Codes | Final Project | Frontend Starter Repo
 
-This Vite Little Shop - Coupon Codes FE Final Project Boilerplate is built to consume and display the data from the BE Rails API built in the Mod 2 Final Project.  
-
 ## Set Up Instructions
 
-**Note:** Do **not** clone this repo into your backend repo. Put it somewhere else as a stand alone. The BE and FE repos will remain two separate repos and you will submit the links to each.  
+# Hang in There  (Left this because this was how I felt some of the time.)
 
-1. Fork repo
-1. Clone forked repo and rename it `git clone <repo> <new name>`
-1. `cd` into cloned repo
-1. Run `npm install`
-1. Run `npm run dev` to start developing.
-  1. You'll see in the terminal that the project has opened at "http://localhost:5173/"
+Github Backend: https://github.com/jinman14/little-shop-be-final-starter-ji
 
-## Notes
-
-This FE application is build to consume the data from your Rails API.  In order for it to work, you must have your Rails API running on localhost:3000. You will see fetch errors when running the FE without the BE API up and running.  
-
-Follow the directions in the FE requirements portion of the Little Shop Coupon Codes final project spec. When you are finished with the FE work, update this README to remove the current content and follow the template below.  
-
-______________________________________________________  
-# README Template  
-Before turning this project in, erase this line and everything above it and fill in the info below.  
-______________________________________________________  
-
-# Hang in There  
-
-Link to your GitHub. Consider also providing LinkedIn link
+Github Frontend: https://github.com/jinman14/little-shop-fe-final-starter-ji
 
 ### Abstract:
-(Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
+This project took the previous project and added a new database to it, for coupons. It required relations and associations to be build between existing dbs and the new coupons. 
 
 ### Installation Instructions:
-(What steps does a person have to take to get your app cloned down and running?)
-
-### Preview of App:
-(Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off. gifs preferred!)
+To use, clone down both the front and the back ends. Open both, the back end with 'rails s' command, and the front with 'npm dev run'. You will also have to open the front end with 'http://localhost:5173/'.
 
 ### Context:
-(Give some context for the project here. How long did you have to work on it? What specific work/improvements did you contribute to this FE application?)
+We were given from Thursday evening to a Tuesday evening. I'd rather not say how much time I spent on it, as it is likely to disappoint someone. Either too much time, or maybe too little. The point is, it works.
 
 ### Learning Goals:
-(What were the learning goals of this project? What tech did you work with?)
+Solidifying the basic understanding of APIs, routes, and database associations. Writing and making functional a new potential table. But most importantly, finding our ability as developers to make logical pathways, make it work, and stand behind our decisions.
 
 ### Wins + Challenges:
-(What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
+I felt I did a good job of integrating my new code with the existing code. I tried when I could to match the stylistic choices of the previous coders, but also make it functional in a way I understand. This leads to my second proud point, in that I spent time learning new things to make it fit the current structure. I would hope that were someone to come in, they would not realize two different sources wrote this code.
