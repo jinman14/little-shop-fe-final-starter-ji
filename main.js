@@ -245,7 +245,8 @@ function getMerchantCoupons(event) {
 
 function displayMerchantCoupons(coupons) {
   show([couponsView])
-  hide([merchantsView, itemsView])
+  hide([merchantsView, itemsView, addNewButton])
+  showingText.innerText = `All Coupons for Merchant #${coupons[0].attributes.merchant_id}`
 
   couponsView.innerHTML = ''
 
@@ -254,14 +255,14 @@ function displayMerchantCoupons(coupons) {
       couponsView.innerHTML += `
       <article class="coupon" id="coupon-${coupon.id}">
         <h2>${coupon.attributes.name}</h2>
-        <h3>${coupon.attributes.code}</h3>
-        <p>${coupon.attributes.discount}</p>
-        <P>${coupon.attributes.status}</p>
+        <h3>Code: ${coupon.attributes.code}</h3>
+        <p>Discount: ${coupon.attributes.discount}%</p>
+        <P>Status: ${coupon.attributes.status}</p>
       </article>
     `
     })
   } else {
-    couponsView.innerHTML = `<p>Nope, there aren't any coopins here, try another merchant!</p>`
+    couponsView.innerHTML = `<p>Nope, there aren't any coo-pins here, try another merchant!</p>`
   }
 }
 
